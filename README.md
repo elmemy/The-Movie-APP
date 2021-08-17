@@ -10,7 +10,7 @@ In addition to that. I use some third-party frameworks like
 - Alamofire to make the network requests.
 - Kingfisher to show Images and make caching to the image.
 - RealmSwift to save films includes information such as a backdrop image, tagline, original title, short description.
--Localize-Swift to make localization to another language easier.
+- Localize-Swift to make localization to another language easier.
 
 
 
