@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1II-am-bx2">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Neo Sans W23 Medium.ttf">
+            <string>NeoSansW23-Medium</string>
+        </array>
+        <array key="Neo Sans W23 Regular.ttf">
+            <string>NeoSansW23</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--VeryCreatives-->
+        <scene sceneID="FLp-YX-oro">
+            <objects>
+                <viewController storyboardIdentifier="MoviesListViewController" id="p4b-RP-VXZ" customClass="MoviesListViewController" customModule="Themoviedb" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsE-3h-ToW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Vh-hf-66d">
+                                <rect key="frame" x="20" y="162" width="280" height="401"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ECy-z2-5tF">
+                                <rect key="frame" x="20" y="54" width="155" height="88"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Hello," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5q9-BK-fLP" customClass="CustomLabel" customModule="Themoviedb" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="38"/>
+                                        <fontDescription key="fontDescription" name="NeoSansW23" family="Neo Sans W23" pointSize="14"/>
+                                        <color key="textColor" name="MainFontColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="اهلا وسهلا"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="englishText" value="Hello,"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VeryCreatives" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JT2-Qe-IAE">
+                                        <rect key="frame" x="0.0" y="43" width="155" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="NeoSansW23" family="Neo Sans W23" pointSize="20"/>
+                                        <color key="textColor" name="MainColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="englishText" value="Hello,"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check these movies out!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hs-3T-XoF" customClass="CustomLabel" customModule="Themoviedb" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="71.5" width="155" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="NeoSansW23" family="Neo Sans W23" pointSize="14"/>
+                                        <color key="textColor" name="MainFontColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="تحقق من هذه الأفلام!"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="englishText" value="Check these movies out!"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="nzf-Qr-b79"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="shr-c3-GUL">
+                                <rect key="frame" x="275" y="85.5" width="25" height="25"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKq-iw-nGA">
+                                        <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="Euw-U8-QHU"/>
+                                            <constraint firstAttribute="width" constant="25" id="oRc-PH-V6N"/>
+                                        </constraints>
+                                        <state key="normal" image="sort"/>
+                                        <connections>
+                                            <action selector="sortAction:" destination="p4b-RP-VXZ" eventType="touchUpInside" id="LbB-2p-5tB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_box" translatesAutoresizingMaskIntoConstraints="NO" id="8LM-HO-I9h">
+                                <rect key="frame" x="40" y="220" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Zyp-t5-HKI"/>
+                                    <constraint firstAttribute="width" constant="240" id="lTa-9d-MF9"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ulK-D1-Ejz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ulK-D1-Ejz" firstAttribute="trailing" secondItem="3Vh-hf-66d" secondAttribute="trailing" constant="20" id="1x9-E1-3iC"/>
+                            <constraint firstItem="ECy-z2-5tF" firstAttribute="leading" secondItem="ulK-D1-Ejz" secondAttribute="leading" constant="20" id="6qK-uy-btX"/>
+                            <constraint firstItem="3Vh-hf-66d" firstAttribute="top" secondItem="ECy-z2-5tF" secondAttribute="bottom" constant="20" id="Mfu-Gp-rcP"/>
+                            <constraint firstItem="ECy-z2-5tF" firstAttribute="top" secondItem="ulK-D1-Ejz" secondAttribute="top" constant="10" id="ZKc-Xf-05J"/>
+                            <constraint firstItem="8LM-HO-I9h" firstAttribute="centerY" secondItem="tsE-3h-ToW" secondAttribute="centerY" id="bLZ-ro-DWD"/>
+                            <constraint firstItem="ulK-D1-Ejz" firstAttribute="trailing" secondItem="shr-c3-GUL" secondAttribute="trailing" constant="20" id="cOB-jd-W5M"/>
+                            <constraint firstItem="ulK-D1-Ejz" firstAttribute="bottom" secondItem="3Vh-hf-66d" secondAttribute="bottom" constant="5" id="cm4-4V-lM8"/>
+                            <constraint firstItem="3Vh-hf-66d" firstAttribute="leading" secondItem="ulK-D1-Ejz" secondAttribute="leading" constant="20" id="efE-ml-Z4Z"/>
+                            <constraint firstItem="shr-c3-GUL" firstAttribute="centerY" secondItem="ECy-z2-5tF" secondAttribute="centerY" id="tuv-47-Lw4"/>
+                            <constraint firstItem="8LM-HO-I9h" firstAttribute="centerX" secondItem="tsE-3h-ToW" secondAttribute="centerX" id="zcz-OV-pZP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="VeryCreatives" id="yym-4Y-lzr"/>
+                    <connections>
+                        <outlet property="noDataImage" destination="8LM-HO-I9h" id="Gpg-Yr-TkQ"/>
+                        <outlet property="tableView" destination="3Vh-hf-66d" id="KKE-Qd-i14"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J6D-5F-i6r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1831.875" y="81.338028169014081"/>
+        </scene>
+        <!--Movie Details View Controller-->
+        <scene sceneID="lts-CG-X4b">
+            <objects>
+                <viewController storyboardIdentifier="MovieDetailsViewController" id="2iZ-rZ-vjh" customClass="MovieDetailsViewController" customModule="Themoviedb" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0bV-iK-SnK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2a7-py-RjS">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="byG-K6-uHI">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="589.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Sne-fg-HrH">
+                                                <rect key="frame" x="20" y="20" width="68.5" height="20"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmR-3j-N4L">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="55v-7y-FaH"/>
+                                                            <constraint firstAttribute="width" constant="20" id="pZc-ho-YTM"/>
+                                                        </constraints>
+                                                        <state key="normal" image="arrow"/>
+                                                        <connections>
+                                                            <action selector="dismiss:" destination="2iZ-rZ-vjh" eventType="touchUpInside" id="glm-6Q-S3x"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-------" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0r-Gl-wv0">
+                                                        <rect key="frame" x="30" y="0.0" width="38.5" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="6Cc-w8-LEr"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="NeoSansW23-Medium" family="Neo Sans W23" pointSize="14"/>
+                                                        <color key="textColor" name="MainFontColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="nvr-yF-Dry"/>
+                                                </constraints>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKB-72-mre">
+                                                <rect key="frame" x="275" y="17.5" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="25" id="LVa-OB-eeB"/>
+                                                    <constraint firstAttribute="height" constant="25" id="XgM-qA-ik5"/>
+                                                </constraints>
+                                                <state key="normal" image="star-2"/>
+                                                <connections>
+                                                    <action selector="favAction:" destination="2iZ-rZ-vjh" eventType="touchUpInside" id="EUq-GI-Pqo"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="hTC-za-Sn1">
+                                                <rect key="frame" x="20" y="62.5" width="280" height="527"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="249" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvg-qc-nVE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="180"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="textColor" systemColor="labelColor"/>
+                                                        <fontDescription key="fontDescription" name="NeoSansW23-Medium" family="Neo Sans W23" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xId-MS-OT3" customClass="ShadowView" customModule="Themoviedb" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="187" width="280" height="300"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pp7-4Z-kXK">
+                                                                <rect key="frame" x="0.0" y="0.0" width="280" height="300"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="Pp7-4Z-kXK" firstAttribute="top" secondItem="xId-MS-OT3" secondAttribute="top" id="Pi7-Hh-lDL"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Pp7-4Z-kXK" secondAttribute="bottom" id="ddG-It-wg3"/>
+                                                            <constraint firstAttribute="height" constant="300" id="el6-NG-me0"/>
+                                                            <constraint firstItem="Pp7-4Z-kXK" firstAttribute="leading" secondItem="xId-MS-OT3" secondAttribute="leading" id="hj7-Ml-Px2"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Pp7-4Z-kXK" secondAttribute="trailing" id="qQu-90-swt"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Plu-n0-R5U">
+                                                        <rect key="frame" x="0.0" y="494" width="280" height="33"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="textColor" systemColor="labelColor"/>
+                                                        <fontDescription key="fontDescription" name="NeoSansW23-Medium" family="Neo Sans W23" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="527" id="1ux-yB-R41"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="hTC-za-Sn1" secondAttribute="trailing" constant="20" symbolic="YES" id="8qw-Uw-aj3"/>
+                                            <constraint firstItem="Sne-fg-HrH" firstAttribute="top" secondItem="byG-K6-uHI" secondAttribute="top" constant="20" symbolic="YES" id="JaM-MX-HIN"/>
+                                            <constraint firstItem="hTC-za-Sn1" firstAttribute="leading" secondItem="byG-K6-uHI" secondAttribute="leading" constant="20" symbolic="YES" id="LVN-ct-3Ht"/>
+                                            <constraint firstItem="FKB-72-mre" firstAttribute="centerY" secondItem="r0r-Gl-wv0" secondAttribute="centerY" id="QiT-Hb-HKv"/>
+                                            <constraint firstItem="hTC-za-Sn1" firstAttribute="top" secondItem="FKB-72-mre" secondAttribute="bottom" constant="20" id="doZ-JX-ndY"/>
+                                            <constraint firstAttribute="trailing" secondItem="FKB-72-mre" secondAttribute="trailing" constant="20" id="evx-ef-XOd"/>
+                                            <constraint firstItem="Sne-fg-HrH" firstAttribute="leading" secondItem="byG-K6-uHI" secondAttribute="leading" constant="20" symbolic="YES" id="hXd-jy-2zQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="hTC-za-Sn1" secondAttribute="bottom" id="lDc-Kh-OVe"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="byG-K6-uHI" firstAttribute="top" secondItem="2a7-py-RjS" secondAttribute="top" id="Nsi-9h-w9t"/>
+                                    <constraint firstAttribute="bottom" secondItem="byG-K6-uHI" secondAttribute="bottom" id="V07-YC-1Gn"/>
+                                    <constraint firstItem="byG-K6-uHI" firstAttribute="leading" secondItem="2a7-py-RjS" secondAttribute="leading" id="XCS-3L-uAs"/>
+                                    <constraint firstAttribute="trailing" secondItem="byG-K6-uHI" secondAttribute="trailing" id="qse-gF-7Ep"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oRm-kf-uCH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="byG-K6-uHI" firstAttribute="height" relation="greaterThanOrEqual" secondItem="0bV-iK-SnK" secondAttribute="height" priority="250" id="HXr-tF-xCC"/>
+                            <constraint firstItem="2a7-py-RjS" firstAttribute="top" secondItem="oRm-kf-uCH" secondAttribute="top" id="Puq-HR-rMF"/>
+                            <constraint firstItem="2a7-py-RjS" firstAttribute="trailing" secondItem="oRm-kf-uCH" secondAttribute="trailing" id="TR8-rA-55K"/>
+                            <constraint firstItem="2a7-py-RjS" firstAttribute="leading" secondItem="oRm-kf-uCH" secondAttribute="leading" id="Ug4-dc-nlk"/>
+                            <constraint firstItem="2a7-py-RjS" firstAttribute="width" secondItem="0bV-iK-SnK" secondAttribute="width" id="dqe-U6-O1O"/>
+                            <constraint firstItem="2a7-py-RjS" firstAttribute="height" relation="greaterThanOrEqual" secondItem="0bV-iK-SnK" secondAttribute="height" priority="250" id="gBC-9d-rc4"/>
+                            <constraint firstItem="byG-K6-uHI" firstAttribute="width" secondItem="0bV-iK-SnK" secondAttribute="width" id="lg5-c1-bnD"/>
+                            <constraint firstItem="2a7-py-RjS" firstAttribute="bottom" secondItem="oRm-kf-uCH" secondAttribute="bottom" id="ud9-v3-kj4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descTextView" destination="Plu-n0-R5U" id="wFo-LX-h3p"/>
+                        <outlet property="favouriteButton" destination="FKB-72-mre" id="bqf-mm-eVg"/>
+                        <outlet property="imageView" destination="Pp7-4Z-kXK" id="cyZ-Jx-GD3"/>
+                        <outlet property="taglineLabel" destination="wvg-qc-nVE" id="cI3-vn-bxv"/>
+                        <outlet property="titleLabel" destination="r0r-Gl-wv0" id="Lwa-oF-WSx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qpz-FC-Dl0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2641.875" y="80.281690140845072"/>
+        </scene>
+        <!--Sort View Controller-->
+        <scene sceneID="eJ2-59-zgA">
+            <objects>
+                <viewController storyboardIdentifier="SortViewController" id="pfG-dF-yz0" customClass="SortViewController" customModule="Themoviedb" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="csy-Ff-mKc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bb1-vk-bxs">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="dismiss:" destination="pfG-dF-yz0" eventType="touchUpInside" id="SOU-uR-3z0"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IWB-iS-e1d" customClass="ShadowView" customModule="Themoviedb" customModuleProvider="target">
+                                <rect key="frame" x="30" y="109" width="260" height="350"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In which order would you like me to list the movies?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3IS-Hl-2Cr" customClass="CustomLabel" customModule="Themoviedb" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="20" width="220" height="35"/>
+                                        <fontDescription key="fontDescription" name="NeoSansW23-Medium" family="Neo Sans W23" pointSize="15"/>
+                                        <color key="textColor" name="MainFontColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="بأي ترتيب تريد أن أدرج الأفلام؟"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="englishText" value="In which order would you like me to list the movies?"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SgA-gi-bXc">
+                                        <rect key="frame" x="20" y="95" width="220" height="178"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHh-Ke-KvZ" customClass="CustomButton" customModule="Themoviedb" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="220" height="46"/>
+                                                <color key="backgroundColor" name="MainColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="212" id="ivS-b6-WNl"/>
+                                                    <constraint firstAttribute="height" constant="46" id="uEJ-GK-xWb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NeoSansW23" family="Neo Sans W23" pointSize="13"/>
+                                                <state key="normal" title="Show me the most popular movies!">
+                                                    <color key="titleColor" name="MainFontColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="englishText" value="Show me the most popular movies!"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="اعرض لي افضل الافلام"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="popularMoviesAction:" destination="pfG-dF-yz0" eventType="touchUpInside" id="g6Y-gl-gcL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaA-aa-VGf" customClass="CustomButton" customModule="Themoviedb" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="66" width="220" height="46"/>
+                                                <color key="backgroundColor" name="MainColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="DnE-az-l1v"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="212" id="OHc-AS-zQd"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NeoSansW23" family="Neo Sans W23" pointSize="13"/>
+                                                <state key="normal" title="show me the top-rated movies!">
+                                                    <color key="titleColor" name="MainFontColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="englishText" value="Show me the top-rated movies!"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="شاهد الافلام الاعلي تقييما!"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="topRatedMoviesAction:" destination="pfG-dF-yz0" eventType="touchUpInside" id="U2j-Nn-FQb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkw-jy-8Rs" customClass="CustomButton" customModule="Themoviedb" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="132" width="220" height="46"/>
+                                                <color key="backgroundColor" name="MainColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="Cqg-V3-7BU"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="212" id="V3w-Ro-DqO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NeoSansW23" family="Neo Sans W23" pointSize="13"/>
+                                                <state key="normal" title="Show me my favourite movies!">
+                                                    <color key="titleColor" name="MainFontColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="englishText" value="Show me my favourite movies!"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="شاهد افلامك المفضلة!"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="myFavAction:" destination="pfG-dF-yz0" eventType="touchUpInside" id="7p2-o4-IsJ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="SgA-gi-bXc" secondAttribute="trailing" constant="20" symbolic="YES" id="0nT-h5-WjK"/>
+                                    <constraint firstAttribute="height" constant="350" id="HB5-JG-DaN"/>
+                                    <constraint firstItem="3IS-Hl-2Cr" firstAttribute="top" secondItem="IWB-iS-e1d" secondAttribute="top" constant="20" id="NYd-2f-ITP"/>
+                                    <constraint firstAttribute="trailing" secondItem="3IS-Hl-2Cr" secondAttribute="trailing" constant="20" symbolic="YES" id="P1K-Xc-mWm"/>
+                                    <constraint firstItem="SgA-gi-bXc" firstAttribute="top" secondItem="3IS-Hl-2Cr" secondAttribute="bottom" constant="40" id="evq-iB-SxN"/>
+                                    <constraint firstItem="SgA-gi-bXc" firstAttribute="leading" secondItem="IWB-iS-e1d" secondAttribute="leading" constant="20" symbolic="YES" id="hcL-eu-BRu"/>
+                                    <constraint firstItem="3IS-Hl-2Cr" firstAttribute="leading" secondItem="IWB-iS-e1d" secondAttribute="leading" constant="20" id="wUE-vE-fCS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="o7X-zz-4hd"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.48976934523809523" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IWB-iS-e1d" firstAttribute="centerX" secondItem="csy-Ff-mKc" secondAttribute="centerX" id="DIB-0n-Pf1"/>
+                            <constraint firstItem="bb1-vk-bxs" firstAttribute="leading" secondItem="o7X-zz-4hd" secondAttribute="leading" id="DYg-24-HZY"/>
+                            <constraint firstItem="IWB-iS-e1d" firstAttribute="leading" secondItem="csy-Ff-mKc" secondAttribute="leading" constant="30" id="HiJ-ZS-BZQ"/>
+                            <constraint firstItem="o7X-zz-4hd" firstAttribute="trailing" secondItem="bb1-vk-bxs" secondAttribute="trailing" id="U57-6r-Va6"/>
+                            <constraint firstItem="bb1-vk-bxs" firstAttribute="top" secondItem="o7X-zz-4hd" secondAttribute="top" id="b4d-1H-fON"/>
+                            <constraint firstItem="o7X-zz-4hd" firstAttribute="bottom" secondItem="bb1-vk-bxs" secondAttribute="bottom" id="hEh-UL-enu"/>
+                            <constraint firstItem="IWB-iS-e1d" firstAttribute="centerY" secondItem="csy-Ff-mKc" secondAttribute="centerY" id="hJU-Vt-EjY"/>
+                            <constraint firstAttribute="trailing" secondItem="IWB-iS-e1d" secondAttribute="trailing" constant="30" id="zwr-IF-AGQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NTm-ew-Whg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3386.25" y="66.549295774647888"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PzM-sN-Y1v">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1II-am-bx2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FIF-5v-q1y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="p4b-RP-VXZ" kind="relationship" relationship="rootViewController" id="EyI-Wa-WhP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pd1-PL-lzr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="834.375" y="81.338028169014081"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="2hs-3T-XoF">
+            <size key="intrinsicContentSize" width="155" height="16.5"/>
+        </designable>
+        <designable name="3IS-Hl-2Cr">
+            <size key="intrinsicContentSize" width="346.5" height="17.5"/>
+        </designable>
+        <designable name="5q9-BK-fLP">
+            <size key="intrinsicContentSize" width="36" height="16.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="arrow" width="256" height="256"/>
+        <image name="empty_box" width="490.5" height="474"/>
+        <image name="sort" width="256" height="256"/>
+        <image name="star-2" width="256" height="256"/>
+        <namedColor name="MainColor">
+            <color red="0.99607843137254903" green="0.792156862745098" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainFontColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
